@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="dji_sdk" type="dji_sdk_node" name="dji_sdk" output="screen">
+		<!-- node parameters -->
+        <param name="drone_version" type="string" value="M100"/>
+		<param name="serial_name" type="string" value="/dev/ttyUSB0"/>   <!--ttyTHS1-->
+		<param name="baud_rate" type="int" value="230400"/> <!--230400-->
+		<param name="app_id" type="int" value="1030752"/>
+		<param name="app_version" type="int" value="1"/>
+		<param name="app_bundle_id" type="string" value="It's NBZD's time"/>
+		<param name="enc_key" type="string" value="a2a56e8e7ae8d01abd270624d93a1a6309ee95b69e555142f6c965036aff0f9e"/>
+		<param name="groundstation_enable" type="int" value="1"/>
+	</node>
+</launch>
